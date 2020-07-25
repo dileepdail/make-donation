@@ -86,6 +86,31 @@
                     <submit />
                 </default-field>
             </field>
+            
+ !--            Layout for Quasar (/qapps). Doesn't work for bootstrap (/vapps).-->
+            <field-layout>
+                <fields-not-referenced/>
+                <field-row>
+                    <field-ref name="firstName"/>
+                    <field-ref name="lastName"/>
+                </field-row>
+                <field-ref name="emailAddress"/>
+                <field-ref name="contactNumber"/>
+                <field-ref name="address1"/>
+                <field-row>
+                    <field-ref name="city"/>
+                    <field-ref name="postalCode"/>
+                </field-row>
+                <field-ref name="stateProvinceGeoId"/>
+                <field-ref name="amount"/>
+                <field-ref name="cardNumber"/>
+                <field-row>
+                    <field-ref name="expireDate"/>
+                    <field-ref name="cardSecurityCode"/>
+                </field-row>
+                <field-ref name="submitButton"/>
+            </field-layout>
+
         </form-single>
     </widgets>
 </screen>
